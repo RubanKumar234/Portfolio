@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruban Kumar - Web Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Glassmorphic Navigation -->
+    <nav class="navbar" id=""> 
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h2 style=" font-family:  'Fira Mono', 'Courier New', monospace;">Hello World!</h2>
+
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#" class="nav-link active" data-section="home">Home</a></li>
+                <li><a href="#" class="nav-link" data-section="profile">Profile</a></li>
+                <li><a href="#" class="nav-link" data-section="academic">Academic</a></li>
+                <li><a href="#" class="nav-link" data-section="career">Career</a></li>
+                <li><a href="#" class="nav-link" data-section="projects">Projects</a></li>
+                <li><a href="#" class="nav-link" data-section="about">About</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <div class="home-banner">
+                <div class="profile-upload-container">
+                    <div class="profile-picture-wrapper">
+                        <!-- <img id="profile-picture" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiByeD0iMTAwIiBmaWxsPSJyZ2JhKDI1NSwgMjU1LCAyNTUsIDAuMSkiLz4KPHN2ZyB4PSI2MCIgeT0iNDAiIHdpZHRoPSI4MCIgaGVpZ2h0PSI4MCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJyZ2JhKDI1NSwgMjU1LCAyNTUsIDAuNSkiPgo8cGF0aCBkPSJNMTIgMTJjMi4yMSAwIDQtMS43OSA0LTRzLTEuNzktNC00LTQtNCAxLjc5LTQgNHMxLjc5IDQgNCA0em0wIDJjLTIuNjcgMC04IDEuMzQtOCA0djJoMTZ2LTJjMC0yLjY2LTUuMzMtNC04LTR6Ii8+Cjwvc3ZnPgo8dGV4dCB4PSIxMDAiIHk9IjE2MCIgZmlsbD0icmdiYSgyNTUsIDI1NSwgMjU1LCAwLjcpIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkNsaWNrIHRvIHVwbG9hZDwvdGV4dD4KPC9zdmc+" alt="Profile Picture"> -->
+                        <img id="profile-picture" src="C:\Users\ruban\Downloads\Ruban_img.jpg" alt="Profile Picture">
+                        <div class="upload-overlay">
+                            <span>Click to Upload</span>
+                        </div>
+                    </div>
+                    <input type="file" id="profile-upload" accept="image/*" class="file-input">
+                </div>
+                <div class="banner-content">
+                    <h1>Welcome to My Portfolio</h1>
+                    <h2>Ruban Kumar B</h2>
+                    <p class="tagline">Programmer Analyst</p>
+                    <p class="tagline"> HAL Simplify Solutions</p>
+                    <!-- <p class="description">Crafting beautiful and functional web experiences with modern technologies</p> -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Profile Section -->
+        <section id="profile" class="section">
+            <div class="container">
+                <h1>Profile</h1>
+                <div class="profile-content">
+                    <div class="profile-details">
+                        <h2>About Me</h2>
+                        <p>I'm a passionate web developer with expertise in modern web technologies. I enjoy creating user-friendly applications and solving complex problems through clean, efficient code.</p>
+                        
+                        <h3>Skills</h3>
+                        <div class="skills-grid">
+                            <span class="skill-tag">HTML5</span>
+                            <span class="skill-tag">CSS3</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">Express</span>
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Responsive Design</span>
+                            <span class="skill-tag">UI/UX Design</span>
+                        </div>
+                    </div>
+                    
+                    <div class="resume-section">
+                        <h3>Resume</h3>
+                        <div class="resume-upload">
+                            <div class="upload-area" id="resume-upload-area">
+                                <div class="upload-content">
+                                    <span class="upload-icon">📄</span>
+                                    <p>Drag & drop your resume here or click to browse</p>
+                                    <p class="file-info">PDF, DOC, DOCX files accepted</p>
+                                </div>
+                                <input type="file" id="resume-upload" accept=".pdf,.doc,.docx" class="file-input">
+                            </div>
+                            <div id="resume-preview" class="resume-preview hidden">
+                                <div class="file-preview">
+                                    <span class="file-icon">📄</span>
+                                    <div class="file-details">
+                                        <span id="resume-name" class="file-name"></span>
+                                        <span id="resume-size" class="file-size"></span>
+                                    </div>
+                                    <div class="file-actions">
+                                        <button id="download-resume" class="btn btn--primary btn--sm">Download</button>
+                                        <button id="remove-resume" class="btn btn--outline btn--sm">Remove</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Academic Section -->
+        <section id="academic" class="section">
+            <div class="container">
+                <h1>Academic Background</h1>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Bachelor of Computer Science</h3>
+                            <span class="institution">University Name</span>
+                            <span class="year">2020-2024</span>
+                            <p>Focused on web development, software engineering, and computer science fundamentals</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Web Development Certification</h3>
+                            <span class="institution">Online Academy</span>
+                            <span class="year">2023</span>
+                            <p>Advanced certification in modern web technologies including React, Node.js, and cloud deployment</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Career Section -->
+        <section id="career" class="section">
+            <div class="container">
+                <h1>Career Experience</h1>
+                <div class="experience-grid">
+                    <div class="experience-card">
+                        <h3>Full Stack Developer</h3>
+                        <div class="company-info">
+                            <span class="company">Tech Solutions Inc.</span>
+                            <span class="period">2024 - Present</span>
+                        </div>
+                        <p>Developing scalable web applications using React, Node.js, and MongoDB. Leading frontend architecture decisions and implementing responsive designs.</p>
+                    </div>
+                    <div class="experience-card">
+                        <h3>Junior Web Developer</h3>
+                        <div class="company-info">
+                            <span class="company">Digital Agency</span>
+                            <span class="period">2023 - 2024</span>
+                        </div>
+                        <p>Created responsive websites and web applications. Collaborated with design teams to implement pixel-perfect UI components.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <h1>Projects</h1>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3>E-commerce Platform</h3>
+                        <p>Full-stack e-commerce solution with React frontend and Node.js backend</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Stripe API</span>
+                        </div>
+                        <a href="#" class="btn btn--primary btn--sm">View Project</a>
+                    </div>
+                    <div class="project-card">
+                        <h3>Portfolio Website Builder</h3>
+                        <p>Drag-and-drop website builder for creating professional portfolios</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">AWS</span>
+                        </div>
+                        <a href="#" class="btn btn--primary btn--sm">View Project</a>
+                    </div>
+                    <div class="project-card">
+                        <h3>Task Management App</h3>
+                        <p>Collaborative project management tool with real-time updates</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Socket.io</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                        </div>
+                        <a href="#" class="btn btn--primary btn--sm">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h1>About & Contact</h1>
+                <div class="about-content">
+                    <div class="contact-info">
+                        <h2>Get In Touch</h2>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <span class="contact-label">Email:</span>
+                                <a href="mailto:ruban.kumar@email.com">ruban.kumar@email.com</a>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-label">Phone:</span>
+                                <a href="tel:+15551234567">+1 (555) 123-4567</a>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-label">Location:</span>
+                                <span>City, Country</span>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-label">Website:</span>
+                                <a href="https://www.rubankumar.dev" target="_blank">www.rubankumar.dev</a>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links">
+                            <a href="https://linkedin.com/in/rubankumar" target="_blank" class="social-link">LinkedIn</a>
+                            <a href="https://github.com/rubankumar" target="_blank" class="social-link">GitHub</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <h3>Send me a message</h3>
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" id="name" name="name" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" id="email" name="email" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject" class="form-label">Subject</label>
+                                <input type="text" id="subject" name="subject" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea id="message" name="message" rows="5" class="form-control" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn--primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Ruban Kumar. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
