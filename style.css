@@ -796,7 +796,7 @@ select.form-control {
 .nav-link:hover,
 .nav-link.active {
   color: white;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(132, 87, 220, 0.7);
   backdrop-filter: blur(20px);
 }
 
@@ -831,7 +831,7 @@ select.form-control {
 
 /* Home Section with Gradient */
 #home {
-  background: linear-gradient(135deg, #9965ff 0%, #2d1d4c 50%, #2d1d4c 100%);
+  background: linear-gradient(135deg, #ffffff 0%, #54d5fd 50%, #ffffff 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1214,7 +1214,7 @@ select.form-control {
 
 /* About Section */
 #about {
-  background: linear-gradient(125deg, #000000 0%, #009dff 50%, #004eff 60%);
+  background: linear-gradient(204deg, #ffa1a1 0%, #1f0303 50%);
 }
 
 .about-content {
